@@ -37,7 +37,7 @@ app.use(
 );
 app.use(express.raw({ verify: rawBodySaver, type: "*/*", limit: "50mb" }));
 
-const whitelist = ["https://app-dev.cheersly.club", "http://localhost:3000"];
+const whitelist = ["https://app.getgranularity.com", "http://localhost:3000"];
 
 app.use(
   cors({

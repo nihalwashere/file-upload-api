@@ -1,0 +1,30 @@
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const PORT = process.env.PORT || 7000;
+
+const {
+  LOG_LEVEL,
+  MONGO_URL,
+  JWT_SECRET_KEY,
+  APP_ENV,
+  AWS_BUCKET_NAME,
+  AWS_BUCKET_REGION,
+  AWS_ACCESS_KEY,
+  AWS_SECRET_KEY,
+  CLOUDFRONT_DISTRIBUTION_ID,
+} = process.env;
+
+module.exports = {
+  PORT,
+  LOG_LEVEL,
+  MONGO_URL,
+  JWT_SECRET_KEY,
+  APP_ENV,
+  CLOUDFRONT_DISTRIBUTION_ID,
+  AWS_BUCKET_NAME,
+  AWS_BUCKET_REGION,
+  AWS_ACCESS_KEY,
+  AWS_SECRET_KEY,
+};

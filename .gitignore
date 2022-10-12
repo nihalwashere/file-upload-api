@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+
+*.pub
+*.pem
+*.env
+coverage/
+logs/
+*.log
